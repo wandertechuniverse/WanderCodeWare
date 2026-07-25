@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+
+  --color-luxury-50: #fafaf9;
+  --color-luxury-100: #f5f5f4;
+  --color-luxury-200: #e7e5e4;
+  --color-luxury-300: #d6d3d1;
+  --color-luxury-400: #a8a29e;
+  --color-luxury-500: #78716c;
+  --color-luxury-600: #57534e;
+  --color-luxury-700: #44403c;
+  --color-luxury-800: #292524;
+  --color-luxury-900: #1c1917;
+  --color-luxury-950: #0c0a09;
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    background-color: #fafaf9;
+    color: #1c1917;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .font-serif { font-family: var(--font-serif); }
+
+  .dot-bg {
+    background-image: radial-gradient(circle, #d6d3d1 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
