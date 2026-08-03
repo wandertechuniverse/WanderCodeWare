@@ -31,7 +31,7 @@ export const products: Product[] = [
     category: 'accessories',
     description: '100% Mulberry silk scarf in matte black. Hand-rolled edges. An effortless layer for any season.',
     details: ['100% Mulberry Silk', 'Hand-rolled edges', 'Dry clean only'],
-    image: 'https://images.unsplash.com/photo-1705674337411-3b89e5afcc11?auto=format&fit=crop&q=80&w=900',
+    image: '/Scarf.jpg',
     sizes: ['One Size'],
   },
   {
